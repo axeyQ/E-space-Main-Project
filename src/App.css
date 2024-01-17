@@ -1,45 +1,4 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&display=swap");
 * {
@@ -47,12 +6,32 @@
   margin: 0;
   font-family: "poppins";
 }
+
+//navbar starts here
+
+.navbar {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  font-family: "Neucha";
+  font-size: 50px;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 30px;
+}
+
 .appClass {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
+  flex-direction: column;
 }
 
 .formClass {
@@ -120,4 +99,77 @@
 .formFooterClass p {
   font-size: 12px;
   width: 30%;
+}
+
+//atropos
+
+.home-container {
+  min-width: 70vw;
+  min-height: 70%;
+  border-radius: 25px;
+  border: 1px solid #f2f2f2;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-container:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin-left: -4em;
+  margin-top: -4em;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  transition: clip-path 0.3s;
+  background: url("./assets/main-bg.jpg") no-repeat 100%;
+  border-radius: 40px;
+}
+.home-container__heading {
+  font-size: 45px;
+  text-align: center;
+}
+.home-container__heading__logo {
+  font-size: 70px;
+  text-align: center;
+  color: #f2f2f2;
+  font-family: "neucha";
+}
+.home-container__image {
+  width: 50%;
+}
+.home-container__button {
+  position: absolute;
+  left: 40%;
+  bottom: 150px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 16px 32px;
+  transition: all 0.2s ease-in-out;
+}
+.home-container__button:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+.my-atropos {
+  width: 55%;
+  border-radius: 25px;
+}
+.atropos-scale,
+.atropos-rotate,
+.atropos-inner,
+.home-container {
+  overflow: visible;
+  position: relative;
+  border-radius: 25px;
+}
+.add-border.home-container:before {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+.home-container:hover.my-atropos {
+  background-image: none;
 }
