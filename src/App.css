@@ -1,0 +1,123 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+.appClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.formClass {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0px 25px 0px 25px;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+.componentClass {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2px;
+}
+.componentInput {
+  width: 80%;
+  height: 30px;
+  border-width: 1px;
+  /* border-radius: 5px 15px 15px 5px; */
+  border-radius: 5px;
+  padding-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.componentInput:focus-visible {
+  background: #f2f2f2;
+  color: black;
+}
+.loginComponent {
+  display: flex;
+  justify-content: flex-start;
+  padding: 25px 0px;
+  border-radius: 25px;
+  border: 1px solid #f2f2f2;
+  background: rgba(0, 0, 0);
+  width: 75%;
+  align-items: center;
+}
+.loginImageClass {
+  width: 60%;
+}
+.btn-primary {
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 2px solid #f2f2f2;
+  transition: all 0.2s ease-in;
+}
+.btn-primary:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.9);
+  border-color: transparent;
+}
+.formFooterClass {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  align-items: center;
+}
+.formFooterClass p {
+  font-size: 12px;
+  width: 30%;
+}
